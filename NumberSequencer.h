@@ -1,3 +1,6 @@
+#ifndef NUMBER_SEQUENCER
+#define NUMBER_SEQUENCER
+
 #include <cstdint>
 #include <vector>
 #include <array>
@@ -286,3 +289,5 @@ constexpr inline auto operator""_nseq()
 {
     return _numberSequencer::NumberSequencer::SequenceDet<seqStr>();
 }
+
+#endif
